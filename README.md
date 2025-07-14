@@ -1,6 +1,6 @@
 # myblog
 
-本项目为个人博客，基于 Vite + TypeScript 搭建，风格参考 https://cai.im/blog/，适合部署到 Cloudflare。
+本项目为个人博客，基于 Vite + TypeScript 搭建，部署到 Cloudflare。
 
 ## 功能特性
 - 极简、响应式设计
