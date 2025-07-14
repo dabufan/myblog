@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年前端构建工具对比 - 頻率</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="blog-main">
+            <header class="blog-header">
+                <nav class="site-nav">
+                    <a href="/" class="active">Blog</a>
+                    <a href="/about">About</a>
+                </nav>
+                <h1>2025年前端构建工具对比</h1>
+                <h2>Vite、Turbopack、esbuild性能与特性全面分析</h2>
+                <time>2025-07-14</time>
+            </header>
+            <article class="blog-content">
+                <p>构建工具的选择对前端开发效率有着重要影响。本文将对当前主流的构建工具进行对比分析,帮助开发者做出合适的选择。</p>
+                
+                <h3>构建工具的演进</h3>
+                <p>从Webpack到Vite,再到Turbopack,构建工具在以下方面不断进化:</p>
+                <ul>
+                    <li>开发服务器启动速度</li>
+                    <li>热更新性能</li>
+                    <li>构建产物优化</li>
+                    <li>配置复杂度</li>
+                </ul>
+                
+                <h3>Vite特性分析</h3>
+                <p>Vite作为现代化构建工具的代表,具有以下优势:</p>
+                <ul>
+                    <li>基于ES modules的开发服务器</li>
+                    <li>极快的冷启动速度</li>
+                    <li>优秀的开发体验</li>
+                    <li>丰富的插件生态</li>
+                </ul>
+                
+                <h3>Turbopack创新点</h3>
+                <p>Turbopack带来了一些新的思路:</p>
+                <ul>
+                    <li>Rust实现的高性能编译器</li>
+                    <li>增量编译策略</li>
+                    <li>智能缓存机制</li>
+                    <li>与Next.js的深度集成</li>
+                </ul>
+                
+                <h3>esbuild的性能优势</h3>
+                <p>esbuild在以下方面表现出色:</p>
+                <ul>
+                    <li>极致的构建速度</li>
+                    <li>内存占用低</li>
+                    <li>并行处理能力强</li>
+                    <li>API设计简洁</li>
+                </ul>
+                
+                <h3>性能对比</h3>
+                <p>在实际项目中的性能表现(基于10K模块的项目):</p>
+                <ul>
+                    <li>开发服务器启动: Vite < Turbopack < esbuild</li>
+                    <li>热更新速度: esbuild ≈ Turbopack < Vite</li>
+                    <li>生产构建: esbuild < Turbopack < Vite</li>
+                </ul>
+                
+                <h3>选择建议</h3>
+                <p>根据不同场景的需求:</p>
+                <ul>
+                    <li>中小型项目: 首选Vite</li>
+                    <li>大型单体应用: 考虑Turbopack</li>
+                    <li>工具链开发: 使用esbuild</li>
+                </ul>
+                
+                <p>构建工具的选择需要根据项目规模、团队熟悉度、生态系统等因素综合考虑。随着这些工具的不断发展,相信未来会有更多优秀的解决方案出现。</p>
+            </article>
+            <footer class="blog-footer">
+                <div class="copyright">© 2025 Designed and developed by Q Lee.</div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

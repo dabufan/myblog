@@ -18,35 +18,37 @@ function renderNav(activePath: NavPath): string {
 }
 
 const blogTitle = '頻率 [pín lǜ]';
-const blogSubtitle = '跳動的世界裡找你的頻率';
+const blogSubtitle = '设计改变生活，编程改变命运';
 const blogYears: BlogYear[] = [
   {
     year: 2025,
     posts: [
-      { date: '04/19', title: 'Migrate Astro Site From Cloudflare Pages to Workers', url: '#' },
-      { date: '02/22', title: '人生第一台 Mac 祛魅最好的方式就是拥有', url: '#' },
-      { date: '02/18', title: '新站点 新域名，新主题，新生成器', url: '#' },
-      { date: '02/13', title: '任我行 以为留在原地不够遨游，就让它沙滩里戏水', url: '#' }
+      { date: '07/14', title: '个人博客站点上线了！', url: '/posts/blog-launch' },
+      { date: '06/30', title: 'React 18 新特性探索：并发渲染与 Suspense', url: '/posts/react-18-features' },
+      { date: '05/15', title: '从零开始的前端工程化实践', url: '/posts/frontend-engineering' },
+      { date: '04/01', title: 'TypeScript 5.0 新特性解析', url: '/posts/typescript-5-features' }
     ]
   },
   {
     year: 2024,
     posts: [
-      { date: '09/21', title: '启航', url: '#' },
-      { date: '09/03', title: '我们都是这样长大的 时而走近时而远去 谁散与聚 都居于心里', url: '#' },
-      { date: '08/26', title: '夏 / 剑桥 明年即使有热血 初樱初雪 又如何约定', url: '#' }
+      { date: '12/25', title: '年终总结：我的 2024 技术之旅', url: '/posts/2024-summary' },
+      { date: '11/18', title: 'Next.js 项目性能优化实践', url: '/posts/nextjs-optimization' },
+      { date: '09/30', title: '浏览器渲染原理深度解析', url: '/posts/browser-rendering' }
     ]
   },
   {
     year: 2023,
     posts: [
-      { date: '08/30', title: 'Try Astro My experience with Astro, a new static site generator.', url: '#' }
+      { date: '09/15', title: '现代CSS新特性实践', url: '/posts/modern-css-features' },
+      { date: '05/04', title: 'Next.js 13架构解析', url: '/posts/nextjs-13-architecture' }
     ]
   },
   {
     year: 2022,
     posts: [
-      { date: '07/24', title: '第一次体验 MacBook 我的下一台电脑，何必是 Mac', url: '#' }
+      { date: '05/24', title: 'TypeScript 4.7：新特性深度解析', url: '/posts/typescript-4-7' },
+      { date: '03/29', title: 'React 18发布：新特性解析', url: '/posts/react-18-release' }
     ]
   }
 ];

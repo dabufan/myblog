@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAssembly在前端应用实践 - 頻率</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="blog-main">
+            <header class="blog-header">
+                <nav class="site-nav">
+                    <a href="/" class="active">Blog</a>
+                    <a href="/about">About</a>
+                </nav>
+                <h1>WebAssembly在前端应用实践</h1>
+                <h2>探索WebAssembly如何提升Web应用性能</h2>
+                <time>2025-07-14</time>
+            </header>
+            <article class="blog-content">
+                <p>WebAssembly(Wasm)作为一种新的底层编程语言,正在改变Web应用的开发方式。本文将分享我在实际项目中使用WebAssembly的经验和最佳实践。</p>
+                
+                <h3>为什么选择WebAssembly?</h3>
+                <p>在处理复杂计算、图像处理或大量数据操作时,JavaScript的性能往往会成为瓶颈。WebAssembly能够以接近原生的速度运行代码,是解决这些性能问题的理想选择。</p>
+                
+                <h3>实践案例</h3>
+                <p>在最近的一个项目中,我们使用Rust编写WebAssembly模块来处理图像滤镜效果,性能提升达到了10倍以上。主要步骤包括:</p>
+                <ul>
+                    <li>使用wasm-pack构建工具链</li>
+                    <li>Rust代码编译为WebAssembly</li>
+                    <li>JavaScript和WebAssembly的互操作</li>
+                </ul>
+                
+                <h3>性能对比</h3>
+                <p>以图像处理为例,对比了JavaScript和WebAssembly在处理100万像素图片时的性能:</p>
+                <ul>
+                    <li>JavaScript: ~500ms</li>
+                    <li>WebAssembly: ~50ms</li>
+                </ul>
+                
+                <h3>最佳实践</h3>
+                <p>在实践中总结出以下几点建议:</p>
+                <ul>
+                    <li>针对计算密集型任务使用WebAssembly</li>
+                    <li>合理划分JavaScript和WebAssembly的职责</li>
+                    <li>注意内存管理和垃圾回收</li>
+                    <li>做好浏览器兼容性检测</li>
+                </ul>
+                
+                <h3>未来展望</h3>
+                <p>随着WebAssembly技术的不断发展,我们可以期待:</p>
+                <ul>
+                    <li>更多语言的直接支持</li>
+                    <li>更好的开发工具链</li>
+                    <li>与Web API的深度集成</li>
+                </ul>
+                
+                <p>WebAssembly为Web应用开发带来了新的可能性,相信在未来会有更多创新的应用场景。</p>
+            </article>
+            <footer class="blog-footer">
+                <div class="copyright">© 2025 Designed and developed by Q Lee.</div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
