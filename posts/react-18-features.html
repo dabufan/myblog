@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React 18 新特性探索：并发渲染与 Suspense - 頻率</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="blog-main">
+            <header class="blog-header">
+                <nav class="site-nav">
+                    <a href="/">Blog</a>
+                    <a href="/about">About</a>
+                </nav>
+                <h1>React 18 新特性探索：并发渲染与 Suspense</h1>
+                <h2>2025-06-30</h2>
+            </header>
+            <article class="blog-content">
+                <p>React 18 带来了一系列重要的新特性，其中最引人注目的是并发渲染和改进的 Suspense 组件。本文将深入探讨这些特性的实际应用。</p>
+                
+                <h3>并发渲染（Concurrent Rendering）</h3>
+                <p>并发渲染是 React 18 最重要的新特性之一。它允许 React 同时准备多个版本的 UI，这意味着：</p>
+                <ul>
+                    <li>可以中断正在进行的渲染</li>
+                    <li>优先处理更紧急的更新</li>
+                    <li>在后台预渲染内容</li>
+                    <li>避免不必要的加载状态</li>
+                </ul>
+
+                <h3>实践示例</h3>
+                <p>让我们看一个使用 useTransition 的简单示例：</p>
+                <pre><code>
+const [isPending, startTransition] = useTransition();
+const [value, setValue] = useState("");
+
+const handleChange = (e) => {
+    startTransition(() => {
+        setValue(e.target.value);
+    });
+}
+                </code></pre>
+
+                <h3>Suspense 的新进展</h3>
+                <p>Suspense 在 React 18 中得到了显著增强：</p>
+                <ul>
+                    <li>支持服务端渲染</li>
+                    <li>可以包裹任何异步组件</li>
+                    <li>提供更好的加载状态处理</li>
+                </ul>
+
+                <h3>性能优化建议</h3>
+                <p>在使用这些新特性时，需要注意以下几点：</p>
+                <ul>
+                    <li>合理使用 startTransition</li>
+                    <li>避免不必要的 Suspense 嵌套</li>
+                    <li>正确设置加载边界</li>
+                    <li>使用 React.memo 优化渲染</li>
+                </ul>
+
+                <h3>总结</h3>
+                <p>React 18 的并发特性为构建更流畅的用户体验提供了强大的工具。通过合理使用这些特性，我们可以显著提升应用的性能和用户体验。</p>
+            </article>
+            <footer class="blog-footer">
+                <div class="copyright">© 2025 Designed and developed by Q Lee.</div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript 5.0 新特性解析 - 頻率</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="blog-main">
+            <header class="blog-header">
+                <nav class="site-nav">
+                    <a href="/">Blog</a>
+                    <a href="/about">About</a>
+                </nav>
+                <h1>TypeScript 5.0 新特性解析</h1>
+                <h2>2025-04-01</h2>
+            </header>
+            <article class="blog-content">
+                <p>TypeScript 5.0 引入了许多激动人心的新特性，让我们来详细了解这些改进。</p>
+                
+                <h3>装饰器元数据（Decorator Metadata）</h3>
+                <p>新的装饰器实现支持元数据，这使得框架开发变得更加灵活：</p>
+                <pre><code>
+@metadata({
+    role: "admin",
+    permissions: ["read", "write"]
+})
+class UserController {
+    // ...
+}
+                </code></pre>
+
+                <h3>const 类型参数</h3>
+                <p>const 类型参数提供了更好的字面量类型推导：</p>
+                <pre><code>
+function getValue<const T>(value: T) {
+    return value;
+}
+                </code></pre>
+
+                <h3>多态 this 类型改进</h3>
+                <p>类型系统在处理 this 时变得更加智能：</p>
+                <ul>
+                    <li>更准确的方法链式调用类型推导</li>
+                    <li>改进的继承关系处理</li>
+                    <li>更好的类型保护支持</li>
+                </ul>
+
+                <h3>性能优化</h3>
+                <p>5.0 版本在性能方面也有显著提升：</p>
+                <ul>
+                    <li>更快的类型检查</li>
+                    <li>改进的增量构建</li>
+                    <li>更少的内存使用</li>
+                </ul>
+
+                <h3>实践建议</h3>
+                <p>在使用新特性时，建议注意：</p>
+                <ul>
+                    <li>逐步迁移旧代码</li>
+                    <li>充分利用类型推导</li>
+                    <li>保持良好的类型设计</li>
+                </ul>
+            </article>
+            <footer class="blog-footer">
+                <div class="copyright">© 2025 Designed and developed by Q Lee.</div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
