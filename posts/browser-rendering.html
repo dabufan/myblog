@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器渲染原理深度解析 - 頻率</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="blog-main">
+            <header class="blog-header">
+                <nav class="site-nav">
+                    <a href="/">Blog</a>
+                    <a href="/about">About</a>
+                </nav>
+                <h1>浏览器渲染原理深度解析</h1>
+                <h2>2024-09-30</h2>
+            </header>
+            <article class="blog-content">
+                <p>了解浏览器的渲染原理对于前端性能优化至关重要。本文将深入探讨浏览器渲染的各个环节。</p>
+                
+                <h3>渲染流程概述</h3>
+                <p>浏览器渲染页面的主要步骤：</p>
+                <ul>
+                    <li>HTML 解析构建 DOM 树</li>
+                    <li>CSS 解析构建 CSSOM 树</li>
+                    <li>合并形成渲染树</li>
+                    <li>布局计算</li>
+                    <li>绘制页面</li>
+                </ul>
+
+                <h3>关键渲染路径</h3>
+                <p>优化关键渲染路径的策略：</p>
+                <ul>
+                    <li>最小化关键资源数量</li>
+                    <li>优化关键字节数量</li>
+                    <li>优化关键资源加载顺序</li>
+                </ul>
+
+                <h3>重排（Reflow）与重绘（Repaint）</h3>
+                <p>了解并避免不必要的重排和重绘：</p>
+                <pre><code>
+// 批量修改样式
+const element = document.getElementById('myElement');
+element.style.cssText = 
+    'width: 100px; height: 100px; background: red;';
+                </code></pre>
+
+                <h3>复合图层</h3>
+                <p>使用复合图层优化性能：</p>
+                <ul>
+                    <li>使用 transform 和 opacity 进行动画</li>
+                    <li>合理使用 will-change</li>
+                    <li>使用 translate3d 触发硬件加速</li>
+                </ul>
+
+                <h3>渲染性能优化实践</h3>
+                <p>常见的优化手段：</p>
+                <ul>
+                    <li>避免频繁的样式变更</li>
+                    <li>使用 DocumentFragment 批量操作 DOM</li>
+                    <li>将大量动画元素设置为复合图层</li>
+                    <li>使用防抖和节流控制高频事件</li>
+                </ul>
+
+                <h3>性能监控</h3>
+                <p>使用性能监控工具：</p>
+                <ul>
+                    <li>Chrome DevTools Performance 面板</li>
+                    <li>Lighthouse 性能审查</li>
+                    <li>Core Web Vitals 指标</li>
+                </ul>
+
+                <p>深入理解浏览器渲染原理，才能写出更高性能的前端代码。希望这篇文章对你有所帮助！</p>
+            </article>
+            <footer class="blog-footer">
+                <div class="copyright">© 2025 Designed and developed by Q Lee.</div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
